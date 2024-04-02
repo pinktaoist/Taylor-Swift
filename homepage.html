@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Road+Rage&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<head>
+<style>
+body {
+    background-color: #fab2be;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bitter", serif;
+    overflow-x: hidden;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 30px;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    backdrop-filter: blur(90px);
+    border-bottom: 1px solid;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 20px 6px mistyrose;
+}
+h2 {
+    font-size: 44px;
+    text-shadow: 3px 3px mistyrose;
+}
+h3 {
+    font-size: 20px;
+}
+.logo {
+	font-size: 2em;
+	color: hotpink
+}
+.navigation kz {
+	position: relative;
+	font-size: 1.2em;
+	color: #162938;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+.navigation kz::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #162938;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+.navigation kz:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+.navigation .login-button {
+    margin-right: 70px;
+	width: 100px;
+	height: 32px;
+    border: 1px solid #162938;
+    border-radius: 50px;
+    display:inline-block;
+    background: linear-gradient(to right, #162938 0%, transparent);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+.navigation a {
+    text-align: center;
+    text-decoration: none;
+    color: #162938;
+    padding-top: 14px;
+}
+.navigation .login-button:hover {
+    background-position: left bottom;
+    color: white;
+}
+.navigation .login-button:hover::after {
+    background-position: left bottom;
+    color: black;
+    background-color: transparent;
+}
+.wrapper {
+    position: flex;
+    width: 30%;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+.wrapper h1 {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    text-shadow: 25px 25px 5px #212121;
+}
+.wrapper2 {
+    position: flex;
+    margin-top: 10%;
+    width: 60%;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 40px;
+    border: none;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: -30px 30px 20px hotpink;
+}
+.wrapper2 img {
+
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+.wrapper2 img:hover {
+    transform: scale(1.1);
+}
+.wrapper3 {
+    position: flex;
+    width: 120%;
+    height: 150px;
+    background: rgb(226, 169, 163);
+    border-top: 5px solid hotpink;
+    border-bottom: 5px solid hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: 100px;
+}
+.wrapper3 h2 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+.wrapper3 h3 {
+    align-items: right;
+    justify-content: right;
+    margin-left: 73%;
+    margin-top: -1.5%;
+}
+.wrapper4 {
+    position: flex;
+    width: 100%;
+    height: 450px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.wrapper4 .items {
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    place-items: center;
+    background: #fab2be;
+    margin-top: -50%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.wrapper4 .items2 {
+    text-align: center;
+    place-items: center;
+    background: #fab2be;
+    margin-top: -50%;
+    column-span: 2;
+}
+.items h4 {
+    margin: 0.1%;
+    font-weight: 500;
+    font-size: 30px;
+    height: 50px;
+    font-family: "Road Rage", serif;
+    background: linear-gradient(90deg, blue, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wrapper4 .items img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.items img:hover {
+    transform: scale(1.1);
+}
+.wrapper4 .items audio {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background: mistyrose;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+audio::-webkit-media-controls-panel {
+    background: mistyrose;
+   }
+.wrapper4 .items audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+.items2 .button {
+    width: 360px;
+    height: 140px;
+    border: 3px solid black;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #fab2be;
+    font-size: 80px;
+    font-weight: 550;
+    font-family: 'Road Rage', sans-serif;
+    color: black;
+    padding-top: 20px;
+}
+.items2 .button:hover {
+    background: black;
+    color: #fab2be;
+    font-size: 100px;
+}
+.button {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+    display: block;
+    background: linear-gradient(to right, hotpink 50%, #fab2be 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    text-decoration: none;
+}
+.button:hover {
+  background-position: left bottom;
+}
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px; 
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+}
+.text:hover {
+  color: black;  
+}
+.outer {
+  margin: 50px;
+  margin-bottom: -30px;
+}
+</style>
+<body>
+    <header>
+        <img src = "logo.png" width="150" height="90">
+        <nav class = "navigation">
+            <kz href = "#">Shop Now</kz>
+            <kz href = "#">Tour Dates</kz>
+            <kz href = "#">Directed Projects</kz>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class = "login-button" href = "Homepage.html">Home</a>
+    </header> 
+    <div class = "wrapper">
+        <h1>THE <br><br> TORTURED <br><br> POETS <br><br> DEPARTMENT</h1>
+    </div>
+    <div class = "wrapper2">
+        <img src = "1.jpg" width="100%" height="100%">
+    </div>
+    <div class = "wrapper3">
+        <h2><i>&nbsp;“Life isn't how to survive the storm, it's about how to dance in the rain.”</i></h2>
+        <h3>-Taylor Swift</h3>
+
+    </div>
+    <div class = "wrapper4">
+        <div class = "items">
+            <img src = "dearjohn.jpg">
+            <h4>Dear John</h4>
+            <audio src = "dearjohn.mp3" controls></audio>
+        </div>
+        <div class = "items">
+            <img src = "storyofus.jpg">
+            <h4>The Story of Us</h4>
+            <audio src = "storyofus.mp3" controls></audio>
+        </div>
+        <div class = "items">
+            <img src = "perfectlyfine.jpg">
+            <h4>Mr. Perfectly Fine</h4>
+            <audio src = "perfectlyfine.mp3" controls></audio>
+        </div>
+        <div class = "items">
+            <img src = "lovestory.jpg">
+            <h4>Love Story</h4>
+            <audio src = "lovestory.mp3" controls></audio>
+        </div>
+        <div class = "items">
+            <img src = "backtodecember.jpg">
+            <h4>Back to December</h4>
+            <audio src = "backtodecember.mp3" controls></audio>
+        </div>
+        <div class = "items2">
+            <a class = "button" href = "moresongs.html#slider-span1">More Songs</a>
+        </div>
+</body>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+.content {
+    margin-left: 0px;
+    height: 100vh;
+	  width:100%;
+    padding: 0px;
+  }
+body {
+  font-family: "Madimi One", sans-serif;
+  padding: 10px;
+  background: #FFB6C1;
+}
+.header {
+  background: #FFB6C1;
+}
+.image-slider {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .7s;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    margin-top: -5%;
+}
+.slides-div {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    position: relative;
+    width: 160px;
+    height: 240px;
+    transition: .5s;
+    border-radius: 10px;
+    object-fit: cover;
+}.img:hover{
+    transform: scale(1.1);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.header .login-button {
+	width: 200px;
+	height: 70px;
+    border: 1px solid #162938;
+    font-size: 25px;
+    border-radius: 0px 50px 50px 0px;
+    display:inline-block;
+    background: linear-gradient(to right, #162938 0%, transparent);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    margin-bottom: 3.5%;
+    margin-top: 1%;
+}
+.header a {
+    text-align: center;
+    text-decoration: none;
+    color: #162938;
+    padding-top: 14px;
+}
+.header .login-button:hover {
+    background-position: left bottom;
+    color: white;
+}
+.header .login-button:hover::after {
+    background-position: left bottom;
+    color: black;
+    background-color: transparent;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FFB6C1;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #FFB6C1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 160px;
+  border-top: 2px solid;
+  margin-right: 26px;
+  margin-top: 20px;
+}
+.topnav a:hover {
+  background-color: black;
+  color: #FFB6C1;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a class = "login-button" href = "homepage.html">Back to Home</a>
+    <div class = "container1">
+        <div class = "image-slider">
+            <div class = "slides-div" id = "slide1">
+                <img src = "album1.jpg" alt = "" class = "img" id = "img1">
+                <a href = "#slider-span1" class = "button" id = "button-1"></a>
+            </div>
+            <div class = "slides-div" id = "slide2">
+                <img src = "album2.jpg" alt = "" class = "img" id = "img2">
+                <a href = "#slider-span2" class = "button" id = "button-2"></a>
+            </div>
+            <div class = "slides-div" id = "slide3">
+                <img src = "album3.jpg" alt = "" class = "img" id = "img3">
+                <a href = "#slider-span3" class = "button" id = "button-3"></a>
+            </div>
+            <div class = "slides-div" id = "slide4">
+                <img src = "album4.jpg" alt = "" class = "img" id = "img4">
+                <a href = "#slider-span4" class = "button" id = "button-4"></a>
+            </div>
+            <div class = "slides-div" id = "slide5">
+                <img src = "album5.jpg" alt = "" class = "img" id = "img5">
+                <a href = "#slider-span5" class = "button" id = "button-5"></a>
+            </div>
+            <div class = "slides-div" id = "slide6">
+                <img src = "album6.jpg" alt = "" class = "img" id = "img6">
+                <a href = "#slider-span6" class = "button" id = "button-6"></a>
+            </div>
+            <div class = "slides-div" id = "slide7">
+                <img src = "album7.jpg" alt = "" class = "img" id = "img7">
+                <a href = "#slider-span7" class = "button" id = "button-7"></a>
+            </div>
+            <div class = "slides-div" id = "slide8">
+                <img src = "album8.jpg" alt = "" class = "img" id = "img8">
+                <a href = "#slider-span8" class = "button" id = "button-8"></a>
+            </div>
+            <div class = "slides-div" id = "slide9">
+                <img src = "album9.jpg" alt = "" class = "img" id = "img9">
+                <a href = "#slider-span9" class = "button" id = "button-9"></a>
+            </div>
+            <div class = "slides-div" id = "slide10">
+                <img src = "album10.jpg" alt = "" class = "img" id = "img10">
+                <a href = "#slider-span10" class = "button" id = "button-10"></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</div>
+
+<div class="topnav">
+  <a href="album1.html" target="content">Taylor Swift</a>
+  <a href="album2.html" target="content">Fearless</a>
+  <a href="album3.html" target="content">Speak Now</a>
+  <a href="album4.html" target="content">Red</a>
+  <a href="album5.html" target="content">1989</a>
+  <a href="album6.html" target="content">Reputation</a>
+  <a href="album7.html" target="content">Lover</a>
+  <a href="album8.html" target="content">Folklore</a>
+  <a href="album9.html" target="content">Evermore</a>
+  <a href="album10.html" target="content">Midnights</a>
+
+</div>
+
+<div class="content">
+	<iframe name="content" src="home.html" frameborder="0"></iframe>
+  </div>
+
+</body>
+</html>

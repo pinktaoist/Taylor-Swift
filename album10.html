@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Road+Rage&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">\
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Madimi+One&family=Road+Rage&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<head>
+<style>
+body {
+    background: linear-gradient(90deg, #212121, rgb(47, 47, 131));
+}
+.wrapper {
+    position: fixed;
+    display: inline-block;
+    width: 35%;
+    height: 95%;
+    margin-top: 1%;
+    background-color: #fab2be;
+    border-radius: 20px;
+}
+.img-container {
+    height: 38%;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+.img-container img {
+    border-radius: 30px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.img-container img:hover {
+    transform: scale(1.1);
+}
+.wrapper .text-container {
+    height: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -3%;
+}
+.text-container h4 {
+    margin-top: -4%;
+    margin-left: 18%;
+    font-size: 90px;
+    font-family: "Road Rage", serif;
+    background: linear-gradient(90deg, rgb(47, 47, 131), #212121);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-container2 {
+    height: 43%;
+    width: 95%;
+    font-size: 14px;
+    margin: 3%;
+    margin-top: 12%;
+    font-family: "Carrois Gothic SC", sans-serif;
+    text-align: center;
+}
+.text-container2 .lists {
+    width: 40%;
+    height: 40%;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 3%;
+    text-align: left;
+}
+.text-container2 .lists2 {
+    width: 50%;
+    font-size: 12px;
+    height: 40%;
+    display: inline-block;
+    text-align: left;
+}
+.wrapper2 {
+    margin-left: 37%;
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    height: 900px;
+    margin-top: 2%;
+}
+.container1 {
+    position: flex;
+    width: 100%;
+    height: 300px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+.container1 .items {
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    place-items: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.container1 .items img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.items img:hover {
+    transform: scale(1.1);
+}
+.container1 .items audio {
+    margin-top: -2%;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background-color: #fab2be;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #fab2be;
+   }
+.container1 .items audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="img-container">
+        <img src = "midnightalbum.jpg">
+    </div>
+    <div class="text-container">
+        <h4>~ Midnights ~</h4>
+    </div>
+    <div class="text-container2">
+        <b>Midnights</b> is the tenth studio album of Taylor Swift, released on October 21, 2022, by Republic Records. Swift conceived it as a concept album about nocturnal ruminations inspired by her sleepless nights. The autobiographical songwriting explores broad emotions such as regrets, self-criticism, fantasies, heartbreak, and infatuation, using confessional yet cryptic lyrics that allude to her personal life and public image.            
+        <div class = "lists">
+            <ul>
+                <li>Lavender Haze</li>
+                <li>Maroon</li>
+                <li>Anti-Hero</li>
+                <li>Midnight Rain</li>
+                <li>Question...?</li>
+                <li>Karma</li>
+                <li>Labyrinth</li>
+            </ul>
+        </div>
+        <div class="lists2">
+            <ul>
+                <li>Sweet Nothing</li>
+                <li>Mastermind</li>
+                <li>Bejeweled</li>
+                <li>Vigilante Shit</li>
+                <li>You're On Yo ur Own, Kid</li>
+                <li>Snow On The Beach<br>(feat. Lana Del Ray)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper2">
+<div class="container1">
+    <div class = "items">
+        <img src = "lavenderhaze.jpg">
+        <audio src = "lavenderhaze.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "maroon.jpg">
+        <audio src = "maroon.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "antihero.jpg">
+        <audio src = "antihero.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "snowonthebeach.jpg">
+        <audio src = "snowonthebeach.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "youreonyourown.jpg">
+        <audio src = "youreonyourown.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "midnightrain.jpg">
+        <audio src = "midnightrain.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "question.jpg">
+        <audio src = "question.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "vigilanteshit.jpg">
+        <audio src = "vigilanteshit.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "bejeweled.jpg">
+        <audio src = "bejeweled.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "labyrinth.jpg">
+        <audio src = "labyrinth.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "karma.jpg">
+        <audio src = "karma.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "sweetnothing.jpg">
+        <audio src = "sweetnothing.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "mastermind.jpg">
+        <audio src = "mastermind.mp3" controls></audio>
+    </div>
+</div>
+</div>
+
+</body>

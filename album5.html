@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Road+Rage&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">\
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Madimi+One&family=Road+Rage&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<head>
+<style>
+body {
+    background: linear-gradient(90deg, rgb(87, 241, 221), rgb(243, 243, 154));
+}
+.wrapper {
+    position: fixed;
+    display: inline-block;
+    width: 35%;
+    height: 95%;
+    margin-top: 1%;
+    background-color: #fab2be;
+    border-radius: 20px;
+}
+.img-container {
+    height: 38%;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+.img-container img {
+    border-radius: 30px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.img-container img:hover {
+    transform: scale(1.1);
+}
+.wrapper .text-container {
+    height: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -3%;
+}
+.text-container h4 {
+    margin-top: -4%;
+    margin-left: 30%;
+    font-size: 90px;
+    font-family: "Road Rage", serif;
+    background: linear-gradient(90deg, rgb(243, 243, 154), rgb(87, 241, 221));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-container2 {
+    height: 43%;
+    width: 90%;
+    font-size: 15px;
+    margin: 5%;
+    margin-top: 12%;
+    font-family: "Carrois Gothic SC", sans-serif;
+    text-align: center;
+}
+.text-container2 .lists {
+    width: 45%;
+    height: 40%;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 3%;
+    text-align: left;
+}
+.text-container2 .lists2 {
+    width: 45%;
+    font-size: 14px;
+    height: 40%;
+    display: inline-block;
+    text-align: left;
+}
+.wrapper2 {
+    margin-left: 37%;
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    height: 900px;
+    margin-top: 2%;
+}
+.container1 {
+    position: flex;
+    width: 100%;
+    height: 300px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+.container1 .items {
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    place-items: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.container1 .items img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.items img:hover {
+    transform: scale(1.1);
+}
+.container1 .items audio {
+    margin-top: -2%;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background-color: #fab2be;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #fab2be;
+   }
+.container1 .items audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="img-container">
+        <img src = "1989album.jpg">
+    </div>
+    <div class="text-container">
+        <h4>~ 1989 ~</h4>
+    </div>
+    <div class="text-container2">
+        <b>1989</b> is the fifth studio album by the American singer-songwriter Taylor Swift, released on October 27, 2014, by Big Machine Records. Inspired by 1980s synth-pop, Swift conceived 1989 to recalibrate her artistry to pop after critics disputed her status as a country musician when she released the cross-genre Red (2012) to country radio. She titled 1989 after her birth year as a symbolic artistic rebirth and enlisted Max Martin, who produced Red's electronic-influenced pop tracks, as co-executive producer.        <div class = "lists">
+            <ul>
+                <li>This Love</li>
+                <li>Clean</li>
+                <li>Style</li>
+                <li>Bad Blood</li>
+                <li>Black Space</li>
+                <li>I Know Places</li>
+                <li>I Wish I Would</li>
+            </ul>
+        </div>
+        <div class="lists2">
+            <ul>
+                <li>Welcome to New York</li>
+                <li>All You Had to Do was Stay</li>
+                <li>How You Get the Girl</li>
+                <li>Out of The Woods</li>
+                <li>Wildest Dreams</li>
+                <li>Shake it Off</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper2">
+<div class="container1">
+    <div class = "items">
+        <img src = "newyork.jpg">
+        <audio src = "newyork.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "blankspace.jpg">
+        <audio src = "blankspace.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "style.jpg">
+        <audio src = "style.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "outofthewoods.jpg">
+        <audio src = "outofthewoods.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "allyouhadtodowasstay.jpg">
+        <audio src = "allyouhadtodowasstay.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "shakeitoff.jpg">
+        <audio src = "shakeitoff.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "thislove.jpg">
+        <audio src = "thislove.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "clean.jpg">
+        <audio src = "clean.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "thatshowyougetthegirl.jpg">
+        <audio src = "thatshowyougetthegirl.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "iwishyouwould.jpg">
+        <audio src = "iwishyouwould.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "badblood.jpg">
+        <audio src = "badblood.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "iknowplaces.jpg">
+        <audio src = "iknowplaces.mp3" controls></audio>
+    </div>
+    <div class = "items">
+        <img src = "wildestdreams.jpg">
+        <audio src = "wildestdreams.mp3" controls></audio>
+    </div>
+</div>
+</div>
+
+</body>
